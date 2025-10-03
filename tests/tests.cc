@@ -66,7 +66,7 @@ TEST_CASE("Example: Print Prompt Ledger", "[ex-3]") {
   atm.RegisterAccount(12345678, 1234, "Sam Sepiol", 300.30);
   auto& transactions = atm.GetTransactions();
   transactions[{12345678, 1234}].push_back(
-      "Withdrawal - Amount: $200.40, Updated Balance: $99.90");
+      "Withdrawal - Amount: $200.40, Updated Balance: $99.91");
   transactions[{12345678, 1234}].push_back(
       "Deposit - Amount: $40000.00, Updated Balance: $40099.90");
   transactions[{12345678, 1234}].push_back(
